@@ -39,3 +39,20 @@ jobs
 
   * ```GET /services/<id>/template```
     * returns a sample job template
+
+
+  * ```POST /services/<id>/queue```
+    * creates a new task and returns the job id / and job URL for monitoring/control
+	
+  * ```GET /jobs```
+    * returns list of all jobs
+
+  * ```GET /jobs/<id>```
+    * returns status and additional URLs, (e.g., details), for job <id> 
+	
+  * ```GET /jobs/<id>?q=details```
+    * returns detailed job information including output
+
+
+add stuff about querying by object id.
+e.g., all jobs by object id.
